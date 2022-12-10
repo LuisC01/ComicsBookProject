@@ -43,7 +43,7 @@ const ComicsList = () => {
                   navigation(`/details/${comic.id}`);
                 }}
               >
-                Get Details
+                More Details
               </Button>
             </td>
           </tr>
