@@ -21,21 +21,23 @@ const ComicsList = () => {
   return (
     <Table striped bordered hover>
       <thead>
-        <tr>
-          <th>Comic:</th>
-          <th>Name:</th>
-          <th>Date:</th>
-          <th>Details</th>
+        <tr class="table-dark">
+          <th scope="row">Image:</th>
+          <th scope="row">Name:</th>
+          <th scope="row">Date:</th>
+          <th scope="row">Issue Number</th>
+          <th scope="row">Details</th>
         </tr>
       </thead>
       <tbody>
         {comics.map((comic) => (
           <tr key={comic.id}>
             <td>
-              <img src={comic.image.small_url} alt="comic-img" />
+              <img src={comic.image.small_url} />
             </td>
             <td>{comic.volume.name}</td>
             <td>{comic.date_added}</td>
+            <td>{comic.issue_number}</td>
             <td>
               <Button
                 variant="danger"

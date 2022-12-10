@@ -9,6 +9,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 const App = (props) => {
   return (
     <div className="App">
+      <div className="top">
+        <header>
+          <h1>ComicBook</h1>
+        </header>
+      </div>
       <Router>
         <Routes>
           <Route exact path="/" element={<ComicsGrid />} />

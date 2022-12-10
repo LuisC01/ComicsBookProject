@@ -22,11 +22,6 @@ const ComicsGrid = () => {
 
   return (
     <div>
-      <div className="top">
-        <header>
-          <h1>ComicBook</h1>
-        </header>
-      </div>
       <Container>
         <Row>
           {comics.map((comic) => (
@@ -34,6 +29,7 @@ const ComicsGrid = () => {
               <Card
                 style={{ width: "20rem", height: "41rem" }}
                 className="mb-5"
+                class="border-right-4 shadow-3"
               >
                 <Card.Img variant="top" src={comic.image.small_url} />
                 <Card.Body>
